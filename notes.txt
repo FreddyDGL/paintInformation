@@ -1,0 +1,4 @@
+PENDIENTAES 
+
+. login afuera - enviara al empleado o al usuario 
+. login capaz de diferenciar empleado y administrador 
