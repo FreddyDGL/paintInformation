@@ -20,12 +20,13 @@
         <div class="container-fluid">
             <div class="row justify-content-end">
 
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand"  href="<?php echo $url?>/empleado/inicio.php">
                     <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
                         class="d-inline-block align-text-top">
                     Bootstrap
                 </a>
             </div>
+
             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">OPCIONES</button>
 
