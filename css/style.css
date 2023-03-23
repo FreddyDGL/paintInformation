@@ -21,8 +21,12 @@ body{
     border-radius: 10px;
 }
 .contMain h1{
-    margin: 0 0 30px;
+
     padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.contMain h2{
     color: #fff;
     text-align: center;
 }
@@ -30,7 +34,6 @@ body{
     position: relative;
 }
 
-/*
 .contMain .contUser input{
     width: 100%;
     padding: 10px 0;
@@ -43,23 +46,21 @@ body{
     background: transparent;
 }
 .contMain .contUser label{
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding: 10px 0;
-    font-size: 16px;
+    margin-top:10px;
+    margin-bottom: -5px;
+    padding: 0;
+    font-size: 20px;
     color: #fff;
-    pointer-events: none;
-    transition: 0.5%;
 }
-.contMain .contUser input:focus - label,
-.contMain .contUser input:valid - label{
+/*
+.contMain .contUser input:focus ~ label,
+.contMain .contUser input:valid ~ label{
     top: -20px;
     left:0;
     color:#03e9f4;
     font-size: 12px;
-}
-*/
+}*/
+
 .contMain form a{
     position: relative;
     display: inline-block;
@@ -93,4 +94,8 @@ body{
 }
 a{
     height: 50px;
+}
+.cardLogin{
+    background: transparent;
+    border:none;
 }
