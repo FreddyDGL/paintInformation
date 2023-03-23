@@ -3,7 +3,7 @@
 <section>
     <div class="contMain">
         <h1>Paint Information</h1>
-        <form action="">
+        <form method="POST">
             <div class="card cardLogin contUser">
                 <div class="card-header">
                     <h2>Login</h2>

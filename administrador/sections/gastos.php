@@ -1,0 +1,1 @@
+Resistrar gastos
