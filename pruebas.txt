@@ -1,0 +1,35 @@
+pruebas de codigo que no me sirvieron 
+
+<?php
+$txtID = (isset($_POST['txtID'])) ? $_POST['txtID'] : "";
+$txtNombre = (isset($_POST['txtNombre'])) ? $_POST['txtNombre'] : "";
+$txtDescription = (isset($_POST['txtDescription'])) ? $_POST['txtDescription'] : "";
+$txtUnidades = (isset($_POST['txtUnidades'])) ? $_POST['txtUnidades'] : "";
+$txtPrecioU = (isset($_POST['txtPrecioU'])) ? $_POST['txtPrecioU'] : "";
+$imagen = (isset($_FILES['imagen']['name'])) ? $_FILES['imagen']['name'] : "";
+
+$accion = (isset($_POST['accion'])) ? $_POST['accion'] : "";
+
+echo $txtID . "<br/>";
+echo $txtNombre . "<br>";
+echo $txtDescription . "<br>";
+echo $txtUnidades . "<br>";
+echo $txtPrecioU . "<br>";
+echo $imagen . "<br>";
+echo $accion . "<br>";
+
+switch ($accion) {
+    case "agregar":
+        echo "agregar";
+        break;
+    case "modificar":
+        echo "modificar";
+        break;
+    case "cancelar":
+        echo "cancelar";
+        break;
+}
+;
+?> 
+
+
