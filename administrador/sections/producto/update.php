@@ -2,7 +2,7 @@
 <div>
     <div class="card">
         <div class="card-header">
-            Datos del Producto
+            Actualización de Datos del Producto
         </div>
         <div class="card-body">
             <form action="edit.php" method="POST">
@@ -31,7 +31,7 @@
                     <input type="text" class="form-control" name="Imagen" placeholder="Imagen">
                 </div>
                 <br>
-                <input type="submit" name="Submit" value="Agregar">
+                <input type="submit" name="Submit" value="Actualizar">
 
                 <a href="producto.php">Regresar</a>
             </form>

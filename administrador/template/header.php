@@ -41,7 +41,7 @@
                                 href="<?php echo $url ?>/administrador/inicio.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/nUsuario.php">Registrar
+                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/nuevoUsuario/nUsuario.php">Registrar
                                 Usuario
                             </a>
                         </li>
