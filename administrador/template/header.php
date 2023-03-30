@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <link rel="icon" href="../../../img/icono.ico">
+    <link rel="icon" href="../img/icono.ico">
+    <title>Paint Information</title>
 </head>
 
 <body>
@@ -20,13 +23,14 @@
             <div class="row justify-content-end">
 
                 <a class="navbar-brand" href="<?php echo $url ?>/administrador/inicio.php">
-                    <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24"
+                    <img src="../../../img/logo.png" src="" alt="Logo" width="55" height="34"
                         class="d-inline-block align-text-top">
-                    Bootstrap
+                    Paint Information
                 </a>
             </div>
             <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Opciones Administrador</button>
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Opciones
+                Administrador</button>
 
             <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
                 aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -41,7 +45,8 @@
                                 href="<?php echo $url ?>/administrador/inicio.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/nuevoUsuario/nUsuario.php">Registrar
+                            <a class="nav-link"
+                                href="<?php echo $url ?>/administrador/sections/nuevoUsuario/nUsuario.php">Registrar
                                 Usuario
                             </a>
                         </li>
@@ -51,7 +56,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/producto/producto.php">Productos</a>
+                            <a class="nav-link"
+                                href="<?php echo $url ?>/administrador/sections/producto/producto.php">Productos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo $url ?>/administrador/sections/gastos.php">Registrar
