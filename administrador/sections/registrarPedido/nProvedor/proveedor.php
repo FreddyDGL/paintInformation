@@ -1,3 +1,7 @@
+<?php
+include("../../../../config/db.php");
+$result = mysqli_query($conection, "SELECT * FROM proveedor");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,10 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../../css/style.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../../../img/icono.ico">
-    <link rel="icon" href="../img/icono.ico">
+    <link rel="stylesheet" href="../../../../css/style.css">
+    <link rel="icon" href="../../../../img/icono.ico">
     <title>Paint Information</title>
 </head>
 
@@ -23,7 +25,7 @@
             <div class="row justify-content-end">
 
                 <a class="navbar-brand" href="<?php echo $url ?>/administrador/inicio.php">
-                    <img src="../../../img/logo.png" src="" alt="Logo" width="55" height="34"
+                    <img src="../../../../img/logo.png" src="" alt="Logo" width="55" height="34"
                         class="d-inline-block align-text-top">
                     Paint Information
                 </a>
@@ -71,7 +73,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/registrarPedido/pedido.php">Registrar
+                            <a class="nav-link"
+                                href="<?php echo $url ?>/administrador/sections/registrarPedido/pedido.php">Registrar
                                 pedido
                             </a>
                         </li>
@@ -92,3 +95,32 @@
 
     <div class="container">
         <div class="row">
+
+            <a href="add.php">Nuevo</a>
+            <a href="update.php">Editar</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <?php
+
+                    while ($res = mysqli_fetch_array($result)) {
+                        echo "<tr>";
+                        echo "<td>" . $res['ID'] . "</td>";
+                        echo "<td>" . $res['Nombre'] . "</td>";
+                        echo "<td>" . $res['Correo'] . "</td>";
+                        echo "<td>" . $res['Telefono'] . "</td>";
+                        echo "<td><a href=\"delete.php?id=$res[ID]\">Eliminar</a></td>";
+                    }
+                    ?>
+                </tbody>
+            </table>
+            <?php include("../../../template/footer.php"); ?>

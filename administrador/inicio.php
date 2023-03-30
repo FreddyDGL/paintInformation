@@ -76,7 +76,7 @@
                                                 </li>
                                                 <li class="nav-item">
                                                         <a class="nav-link"
-                                                                href="<?php echo $url ?>/administrador/sections/pedido.php">Registrar
+                                                                href="<?php echo $url ?>/administrador/sections/registrarPedido/pedido.php">Registrar
                                                                 pedido
                                                         </a>
                                                 </li>

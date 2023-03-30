@@ -7,10 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../../css/style.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../../../img/icono.ico">
-    <link rel="icon" href="../img/icono.ico">
+    <link rel="stylesheet" href="../../../../css/style.css">
+    <link rel="icon" href="../../../../img/icono.ico">
     <title>Paint Information</title>
 </head>
 
@@ -23,7 +21,7 @@
             <div class="row justify-content-end">
 
                 <a class="navbar-brand" href="<?php echo $url ?>/administrador/inicio.php">
-                    <img src="../../../img/logo.png" src="" alt="Logo" width="55" height="34"
+                    <img src="../../../../img/logo.png" src="" alt="Logo" width="55" height="34"
                         class="d-inline-block align-text-top">
                     Paint Information
                 </a>
@@ -71,7 +69,8 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/registrarPedido/pedido.php">Registrar
+                            <a class="nav-link"
+                                href="<?php echo $url ?>/administrador/sections/registrarPedido/pedido.php">Registrar
                                 pedido
                             </a>
                         </li>
@@ -92,3 +91,39 @@
 
     <div class="container">
         <div class="row">
+            <div>
+                <div class="card">
+                    <div class="card-header">
+                        Actualización de Datos del Proveedor
+                    </div>
+                    <div class="card-body">
+                        <form action="edit.php" method="POST">
+                            <div class="form-group">
+                                <label>ID del proveedor</label>
+                                <input type="text" class="form-control" name="ID" placeholder="ID">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label>Nombre del Proveedor</label>
+                                <input type="text" class="form-control" name="Nombre" placeholder="Nombre">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label>E-mail</label>
+                                <input type="text" class="form-control" name="Correo" placeholder="E-mail">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <label>Telefono</label>
+                                <input type="text" class="form-control" name="Telefono" placeholder="Telefono">
+                            </div>
+
+                            <br>
+                            <input type="submit" name="Submit" value="Actualizar">
+
+                            <a href="proveedor.php">Regresar</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <?php include("../../../template/footer.php"); ?>
