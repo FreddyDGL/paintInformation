@@ -10,29 +10,33 @@
                 <label>ID del Nuevo Empleado</label>
                     <input type="text" class="form-control" name="ID" placeholder="ID del Nuevo Empleado">
                 </div>
+                <br>
                 <div class="form-group">
                     <label>Nombre</label>
                     <input type="text" class="form-control" name="Nombre" placeholder="Nombre">
                 </div>
+                <br>
                 <div class="form-group">
                     <label>E-mail</label>
                     <input type="text" class="form-control" name="Correo" placeholder="Correo">
                 </div>
+                <br>
                 <div class="form-group">
                     <label>Contraseña</label>
                     <input type="text" class="form-control" name="Contraseña" placeholder="Contraseña">
                 </div>
+                <br>
                 <div class="form-group">
                     <label>Perfil</label>
                     <input type="text" class="form-control" name="Perfil" placeholder="Perfil">
                 </div>
                 <br>
                 <input type="submit" name="Submit" value="Agregar">
-
                 <a href="nUsuario.php">Regresar</a>
             </form>
         </div>
     </div>
 </div>
+<!--holi-->
 
 <?php include("../../template/footer.php"); ?>
