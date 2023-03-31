@@ -60,7 +60,7 @@
                                 href="<?php echo $url ?>/administrador/sections/producto/producto.php">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/gastos.php">Registrar
+                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/gastos/gastos.php">Registrar
                                 Gastos
                             </a>
                         </li>
