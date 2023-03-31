@@ -4,6 +4,8 @@ $result = mysqli_query($conection, "SELECT * FROM gastos");
 ?>
 <a href="add.php">Nuevo</a>
 <a href="update.php">Editar</a>
+
+<h2>Gastos Actuales </h2>
 <table class="table">
     <thead>
         <tr>
