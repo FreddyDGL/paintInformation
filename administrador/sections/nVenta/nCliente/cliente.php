@@ -64,22 +64,21 @@ $result = mysqli_query($conection, "SELECT * FROM cliente");
                                 href="<?php echo $url ?>/administrador/sections/producto/producto.php">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"
-                                href="<?php echo $url ?>/administrador/sections/gastos/gastos.php">Registrar
+                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/gastos/gastos.php">
                                 Gastos
                             </a>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link"
                                 href="<?php echo $url ?>/administrador/sections/estadoCuenta/estadoCuenta.php">Consultar
                                 Estado
                                 Actual
                             </a>
-                        </li>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link"
                                 href="<?php echo $url ?>/administrador/sections/registrarPedido/pedido.php">Registrar
-                                pedido
+                                Pedido
                             </a>
                         </li>
                         <li class="nav-item">
