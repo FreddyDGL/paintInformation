@@ -1,7 +1,3 @@
-<?php
-include("../../../../config/db.php");
-$result = mysqli_query($conection, "SELECT * FROM proveedor");
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,7 +49,8 @@ $result = mysqli_query($conection, "SELECT * FROM proveedor");
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/nVenta/venta.php">Registrar
+                            <a class="nav-link"
+                                href="<?php echo $url ?>/administrador/sections/nVenta/venta.php">Registrar
                                 Venta
                             </a>
                         </li>
@@ -62,13 +59,15 @@ $result = mysqli_query($conection, "SELECT * FROM proveedor");
                                 href="<?php echo $url ?>/administrador/sections/producto/producto.php">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/gastos/gastos.php">Registrar
+                            <a class="nav-link"
+                                href="<?php echo $url ?>/administrador/sections/gastos/gastos.php">Registrar
                                 Gastos
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                                href="<?php echo $url ?>/administrador/sections/estadoCuenta/estadoCuenta.php">Consultar Estado
+                                href="<?php echo $url ?>/administrador/sections/estadoCuenta/estadoCuenta.php">Consultar
+                                Estado
                                 Actual
                             </a>
                         </li>
@@ -95,32 +94,43 @@ $result = mysqli_query($conection, "SELECT * FROM proveedor");
     <br>
     <div class="container">
         <div class="row">
+            <div class="card">
+                <div class="card-header">
+                    Datos del Cliente
+                </div>
+                <div class="card-body">
+                    <form action="insert.php" method="POST">
+                        <div class="form-group">
+                            <label>ID del cliente</label>
+                            <input type="text" class="form-control" name="ID" placeholder="ID del cliente">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label>Nombre del cliente</label>
+                            <input type="text" class="form-control" name="Nombre" placeholder="Nombre del cliente">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label>Telefono</label>
+                            <input type="text" class="form-control" name="Telefono" placeholder="Telefono">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label>E-mail</label>
+                            <input type="text" class="form-control" name="Correo" placeholder="E-mail">
+                        </div>
+                        <br>
+                        <input type="submit" name="Submit" value="Agregar">
+                        <a href="cliente.php">Regresar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <a href="add.php">Nuevo</a>
-            <a href="update.php">Editar</a>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nombre</th>
-                        <th>Correo</th>
-                        <th>Telefono</th>
-                        <th></th>
-                    </tr>
-                </thead>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
 
-                <tbody>
-                    <?php
-
-                    while ($res = mysqli_fetch_array($result)) {
-                        echo "<tr>";
-                        echo "<td>" . $res['ID'] . "</td>";
-                        echo "<td>" . $res['Nombre'] . "</td>";
-                        echo "<td>" . $res['Correo'] . "</td>";
-                        echo "<td>" . $res['Telefono'] . "</td>";
-                        echo "<td><a href=\"delete.php?id=$res[ID]\">Eliminar</a></td>";
-                    }
-                    ?>
-                </tbody>
-            </table>
-            <?php include("../../../template/footer.php"); ?>
+</html>

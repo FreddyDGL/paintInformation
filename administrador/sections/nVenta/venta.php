@@ -5,6 +5,7 @@ $result = mysqli_query($conection, "SELECT * FROM venta");
 ?>
 <a href="add.php">Nuevo</a>
 <a href="update.php">Editar</a>
+<a href="nCliente/cliente.php" >Nuevo Cliente </a>
 <table class="table">
     <thead>
         <tr>

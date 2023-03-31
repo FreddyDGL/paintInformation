@@ -1,7 +1,8 @@
 <?php
 include("../../../../config/db.php");
-$result = mysqli_query($conection, "SELECT * FROM proveedor");
+$result = mysqli_query($conection, "SELECT * FROM cliente");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,7 +54,8 @@ $result = mysqli_query($conection, "SELECT * FROM proveedor");
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/nVenta/venta.php">Registrar
+                            <a class="nav-link"
+                                href="<?php echo $url ?>/administrador/sections/nVenta/venta.php">Registrar
                                 Venta
                             </a>
                         </li>
@@ -62,13 +64,15 @@ $result = mysqli_query($conection, "SELECT * FROM proveedor");
                                 href="<?php echo $url ?>/administrador/sections/producto/producto.php">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/gastos/gastos.php">Registrar
+                            <a class="nav-link"
+                                href="<?php echo $url ?>/administrador/sections/gastos/gastos.php">Registrar
                                 Gastos
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link"
-                                href="<?php echo $url ?>/administrador/sections/estadoCuenta/estadoCuenta.php">Consultar Estado
+                                href="<?php echo $url ?>/administrador/sections/estadoCuenta/estadoCuenta.php">Consultar
+                                Estado
                                 Actual
                             </a>
                         </li>
@@ -95,20 +99,18 @@ $result = mysqli_query($conection, "SELECT * FROM proveedor");
     <br>
     <div class="container">
         <div class="row">
-
             <a href="add.php">Nuevo</a>
             <a href="update.php">Editar</a>
+
             <table class="table">
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Nombre</th>
-                        <th>Correo</th>
                         <th>Telefono</th>
-                        <th></th>
+                        <th>Correo</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     <?php
 
@@ -116,8 +118,8 @@ $result = mysqli_query($conection, "SELECT * FROM proveedor");
                         echo "<tr>";
                         echo "<td>" . $res['ID'] . "</td>";
                         echo "<td>" . $res['Nombre'] . "</td>";
-                        echo "<td>" . $res['Correo'] . "</td>";
                         echo "<td>" . $res['Telefono'] . "</td>";
+                        echo "<td>" . $res['Correo'] . "</td>";
                         echo "<td><a href=\"delete.php?id=$res[ID]\">Eliminar</a></td>";
                     }
                     ?>
