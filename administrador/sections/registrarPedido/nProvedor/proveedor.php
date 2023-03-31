@@ -92,7 +92,7 @@ $result = mysqli_query($conection, "SELECT * FROM proveedor");
             </div>
         </div>
     </nav>
-
+    <br>
     <div class="container">
         <div class="row">
 

@@ -51,7 +51,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/venta.php">Registrar
+                            <a class="nav-link" href="<?php echo $url ?>/administrador/sections/nVenta/venta.php">Registrar
                                 Venta
                             </a>
                         </li>
@@ -89,6 +89,6 @@
             </div>
         </div>
     </nav>
-
+    <br>
     <div class="container">
         <div class="row">
