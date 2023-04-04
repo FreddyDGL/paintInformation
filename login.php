@@ -21,7 +21,8 @@
                             placeholder="Ingresa tu Contraseña">
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-primary"> Ingresar </button>
+                    <button type="submit" class=""> Ingresar </button>
+                    <a href="index.php">Regresar</a>
                 </div>
             </div>
         </form>

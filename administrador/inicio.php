@@ -94,8 +94,7 @@
                         </div>
                 </div>
         </nav>
-
+        <img class="fondo" src="../img/logo.png" alt="">
         <div class="container">
                 <div class="row">
-                        <button type="button" class="btn btn-success">Success</button>
                         <?php include("template/footer.php"); ?>

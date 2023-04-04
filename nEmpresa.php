@@ -3,6 +3,7 @@
 <h1>Paint Information</h1>
 <h5>Registra tu Empresa y Lleva la Administracion de esta de una Manera mas Facil, Rapida, Segura y Eficaz
 </h5>
+
 <div class="card">
     <div class="card-header">
         Datos de la Empresa
